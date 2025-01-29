@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sarojini Devi</title>
+</head>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efea68;
+    color: #333;
+}
+
+
+nav {
+    background-color: #1e88e5;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    animation: fadeIn 1.5s ease-in;
+}
+
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+.text-content {
+    flex: 2;
+    animation: moveText 3s ease-out forwards;
+}
+
+h1 {
+    color: #1e88e5;
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="expri.html">Experience</a></li>
+            <li><a href="pro.html">Projects</a></li>
+            <li><a href="cont.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="a2.png" alt="Profile Picture">
+        </div>
+        <div class="text-content">
+            <h1>About Me</h1>
+            <p>I'm a passionate web developer with a love for creating dynamic, user-friendly websites. I specialize in front-end development, focusing on creating beautiful and responsive designs.</p>
+        </div>
+    </div>    
+</body>
+</html>

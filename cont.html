@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sarojini Devi</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #aaec9d;
+            color: #333;
+        }
+
+
+        nav {
+            background-color: #413922;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .container h1, .container p {
+            opacity: 0;
+            position: relative;
+            animation: slideDown 1s forwards;
+        }
+
+        .container h1 {
+            animation-delay: 0s;
+        }
+
+        .container p {
+            animation-delay: 0.3s; 
+        }
+
+        .container p strong {
+            font-weight: bold;
+            color: #555;
+        }
+
+
+        @keyframes slideDown {
+            0% {
+                top: -20px;
+                opacity: 0;
+            }
+            100% {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-icon img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover img {
+            transform: scale(1.1);
+        }
+
+        .instagram img {
+            background-color: #E1306C;
+        }
+
+        .linkedin img {
+            background-color: #0077B5;
+        }
+
+        .phone img {
+            background-color: #4CAF50;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="expri.html">Experience</a></li>
+            <li><a href="pro.html">Projects</a></li>
+            <li><a href="cont.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Me</h1>
+        <p><strong>Email:</strong> 727723euec179@skcet.ac.in</p>
+        <p><strong>Phone:</strong> <a href="tel:+919874563210">9874563210</a></p>
+        <p><strong>Location:</strong> SKCET Coimbatore</p>
+
+        <!-- Social Media Icons (Images) -->        <div class="social-links">
+            <a href="https://www.instagram.com/yourusername" target="_blank" class="social-icon instagram">
+                <img src="a5.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="social-icon linkedin">
+                <img src="a6.png" alt="LinkedIn">
+            </a>
+            <a href="tel:+919874563210" class="social-icon phone">
+                <img src="a7.png" alt="Phone">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

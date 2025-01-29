@@ -1,0 +1,144 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling - sets background color for all pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5fbbc7;  /* Light blue background color for all pages */
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.5s ease-in-out; /* Page content fade-in effect */
+    cursor: default; /* Default cursor for the body */
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #4CAF50;  /* Green background color for the navigation bar */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    animation: slideIn 0.5s ease-out; /* Slide-in effect for the navbar */
+    cursor: pointer; /* Pointer cursor for navigation bar area */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* This will make the nav items appear in a row */
+    justify-content: center; /* Center the nav items horizontally */
+    margin: 0;
+    padding: 0;
+    animation: fadeInNav 1s ease-out; /* Fade-in effect for the navbar items */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between items */
+}
+
+nav ul li a {
+    color: white;  /* White text color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    cursor: pointer; /* Pointer cursor on navigation links */
+}
+
+nav ul li a:hover {
+    background-color: #45a049;  /* Darker green when hovering */
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+/* Fade-in effect for content */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-in effect for the navbar */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in effect for navigation links */
+@keyframes fadeInNav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Container for the profile */
+.right {
+    max-width: 900px;
+    margin-left: 50px ;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+    right: 0;
+    height: 200px;
+    width: 800px;
+    padding-left: 10px;
+    padding-top: 60px;
+    top: 30%;
+}
+
+/* Section titles */
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* General section styling */
+section p, section ul {
+    font-size: 16px;
+    color: #555;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+.split{
+
+    position: fixed;
+    overflow-x: hidden;
+    justify-content: space-around;
+}
+.left
+{
+    width: 520px;
+    height: 420px;
+    left: 0;
+    top: 20%;
+    border-radius: 100%;
+}

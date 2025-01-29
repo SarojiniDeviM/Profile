@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Sarojini Devi</title>
+</head>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e06868;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+
+.container {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    color: #333;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.move {
+    display: inline-block;
+    font-size: 40px;
+    color: #2d6a4f;
+    animation: moveAnimation 3s forwards;
+}
+
+@keyframes moveAnimation {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+ul li strong {
+    color: #2d6a4f;
+}
+
+
+.image-container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.image-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="expri.html">Experience</a></li>
+            <li><a href="pro.html">Projects</a></li>
+            <li><a href="cont.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>
+            <span class="move">E</span>
+            <span class="move">x</span>
+            <span class="move">p</span>
+            <span class="move">e</span>
+            <span class="move">r</span>
+            <span class="move">i</span>
+            <span class="move">e</span>
+            <span class="move">n</span>
+            <span class="move">c</span>
+            <span class="move">e</span>
+        </h1>
+        <ul>
+            <li><strong>Frontend Developer</strong></li>
+            <li><strong>Backend Developer</strong> </li>
+        </ul>
+    </div>
+
+
+    <div class="image-container">
+        <img src="a3.png" alt="Experience Image">
+    </div>
+</body>
+</html>

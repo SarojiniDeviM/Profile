@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sarojini Devi</title>
+
+</head>
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+nav {
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f4a261;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.text {
+  width: 60%;
+  padding-right: 2rem;
+}
+
+h1 {
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0; /* Initially hidden */
+  animation: slideUp 1s ease-out forwards;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 1.5rem 0;
+  font-size: 1.1em;
+  color: #555;
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards;
+}
+
+ul li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+ul li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+ul li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.image {
+  width: 35%;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image {
+    width: 80%;
+    margin-top: 2rem;
+  }
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="expri.html">Experience</a></li>
+            <li><a href="pro.html">Projects</a></li>
+            <li><a href="cont.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="text">
+            <h1>Projects</h1>
+            <ul>
+                <li><strong>Project A</strong> – A portfolio website developed with HTML, CSS, and JavaScript.</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="a4.png" alt="Project Image" />
+        </div>
+    </div>
+</body>
+</html>
